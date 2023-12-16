@@ -8,12 +8,11 @@ Panduan:
   Web ini menggunakan elemen input seperti text, radio, checkbox, dan select
 - Menampilkan data dari server kedalam sebuah halaman menggunakan tag `table`
   Tabel sql yang berada pada phpmyadmin sudah berhasil ditampilkan menggunakan php pada tag table dan tr td
+  
 1.2 (15%) Buatlah beberapa event untuk menghandle interaksi pada halaman web
-  Event Handler yang digunakan pada web ini adalah onclick pada tombol reset yang dapat menghapus semua data pada form, event handler onsubmit yang akan melakukan validasi data form untuk mencegah formulir disubmit dengan data yang tidak lengkap dan juga terdapat validasi setiap input sebelum diproses oleh php
-
 Panduan:
 - Tambahkan minimal 3 event yang berbeda untuk menghandle form pada 1.1
-- Implementasikan JavaScript untuk validasi setiap input sebelum diproses oleh PHP
+Event Handler yang digunakan pada web ini adalah onclick pada tombol reset yang dapat menghapus semua data pada form, event handler onsubmit yang akan melakukan validasi data form untuk mencegah formulir disubmit dengan data yang tidak lengkap dan juga terdapat validasi setiap input sebelum diproses oleh php
 
   
 Bagian 2: Server-side Programming (Bobot: 30%)
