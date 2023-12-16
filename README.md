@@ -1,24 +1,15 @@
 # UAS_Pemweb
 
-Ujian Akhir Semester - Mata Kuliah Pemrograman
-UAS Pemrograman Web ini terdiri dari empat bagian yang mencakup berbagai aspek pengembangan sebuah web. Keempat bagian saling berkaitan dan akan bersinergi membentuk sebuah aplikasi web. Berikut adalah panduan untuk ujian ini:
-
-Waktu	:	Batas waktu pengerjaan Senin, 18 Desember 2023 Pukul 09.00 WIB
-Pertanyaan	:	Bacalah setiap pertanyaan dengan teliti dan kerjakan dengan cermat
-Kerja Mandiri	:	Plagiarisme akan mengakibatkan sanksi nilai E pada akhir perkuliahan
-Github	:	Penamaan username github harus mengandung nama dan nim
-Penjelasan	:	Buatlah file `readme.md` untuk menjelaskan setaip bagian kriteria penilaian
-Pengumpulan	:	Dikumpul pada gform: klik disini
-
-Kata-kata motivasi: Pekerjaan yang paling mudah adalah yang tidak dikerjakan. Selamat mengerjakan!
-
 Bagian 1: Client-side Programming (Bobot: 30%)
 1.1 (15%) Buatlah sebuah halaman web sederhana yang memanfaatkan JavaScript untuk melakukan manipulasi DOM.
 
 Panduan:
 - Buat form input dengan minimal 4 elemen input (teks, checkbox, radio, dll.)
+  Web ini menggunakan elemen input seperti text, radio, checkbox, dan select
 - Menampilkan data dari server kedalam sebuah halaman menggunakan tag `table`
+  Tabel sql yang berada pada phpmyadmin sudah berhasil ditampilkan menggunakan php pada tag table dan tr td
 1.2 (15%) Buatlah beberapa event untuk menghandle interaksi pada halaman web
+  Event Handler yang digunakan pada web ini adalah onclick pada tombol reset yang dapat menghapus semua data pada form, event handler onsubmit yang akan melakukan validasi data form untuk mencegah formulir disubmit dengan data yang tidak lengkap dan juga terdapat validasi setiap input sebelum diproses oleh php
 
 Panduan:
 - Tambahkan minimal 3 event yang berbeda untuk menghandle form pada 1.1
