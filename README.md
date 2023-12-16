@@ -41,6 +41,9 @@ Bagian 3: Database Management (Bobot: 20%)
 Panduan:
 - Lampirkan langkah-langkah dalam membuat basisdata dengan syntax basisdata
 
+  Langkah:
+  - Menggunakan query untuk membuat database dengan nama pemweb
+
 3.2 (5%) Buatlah konfigurasi koneksi ke database MySQL pada file PHP. Pastikan koneksi berhasil dan dapat diakses.
 
 Panduan:
