@@ -46,17 +46,19 @@ Panduan:
   - Menambahkan primary key pada kolom 'nim' (ALTER TABLE `pemweb`.`mahasiswa` ADD PRIMARY KEY (`nim`);
 
 3.2 (5%) Buatlah konfigurasi koneksi ke database MySQL pada file PHP. Pastikan koneksi berhasil dan dapat diakses.
-- 
 
 Panduan:
 - Gunakan konstanta atau variabel untuk menyimpan informasi koneksi (host, username, password, nama database).
+  file database.php mengandung semua variabel yang dapat menyimpan informasi koneksi seperti host, username, password, dan nama database)
 
 3.3 (10%) Lakukan manipulasi data pada tabel database dengan menggunakan query SQL. Misalnya, tambah data, ambil data, atau update data.
 
 Panduan:
 - Gunakan query SQL yang sesuai dengan skenario yang diberikan.
+  Pada file database.php terdapat query yang dapat memanipulasi data yang ada pada database phpmyadmin dimana user dapat menambahkan data baru ke database dengan menggunakan query sql yang sesuai.
 
 Bagian 4: State Management (Bobot: 20%)
+-------------------------------------------------------------------
 4.1 (10%) Buatlah skrip PHP yang menggunakan session untuk menyimpan dan mengelola state pengguna. Implementasikan logika yang memanfaatkan session.
 
 Panduan:
@@ -68,15 +70,30 @@ Panduan:
 Panduan:
 - Buat fungsi-fungsi untuk menetapkan, mendapatkan, dan menghapus cookie.
 - Gunakan browser storage untuk menyimpan informasi secara lokal.
+  data informasi browser sudah berhasil disimpan pada local storage
 
 Bagian Bonus: Hosting Aplikasi Web (Bobot: 20%)
+--------------------------------------------------
 Bagian bonus ini akan memberikan bobot tambahan 20% jika Anda berhasil meng-host aplikasi web yang Anda buat. Jawablah pertanyaan-pertanyaan berikut:
 
 (5%) Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
+- login/sign up [infinity](https://www.infinityfree.com/)
+- Mendaftarkan domain atau subdomain
+- Masuk ke control panel
+- upload file didalam htdocs ke website
+- buat database pada menu MySQLDatabase
+- create database dan memasukan nama database yang sesuai
+- Inport database kedalam phpmyadmin
+- Merubah variabel koneksi pada file database.php dengan menyesuakan data yang ada pada website infinityFree dengan membuka control panel
+- website sudah terhubung ke database dan sudah dapat digunakan
 (5%) Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda. Berikan alasan Anda.
+Saya menggunakan InfinityFree dikarenakan proses hosting yang mudah, cepat, sederhana, dan gratis
 (5%) Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
+- dikarenakan hosting menggunakan jasa yang gratis dan juga database bersifat rentan. salah satu keamanan yang diterapkan pada website ini adalah data form yang dimasukan oleh user dikirim menggunakan metode global POST yang lebih aman dibandingkan GET
 (5%) Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda.
-Catatan:
-- Ujian ini dirancang untuk menguji pemahaman dan keterampilan Anda dalam pengembangan web di sisi klien dan server.
-- Pertimbangkan untuk memberikan komentar pada kode Anda untuk menjelaskan langkah-langkah atau alasan tertentu.
-- Pastikan kode Anda bersih, terstruktur, dan mudah dimengerti.
+- Server yang digunakan dalam website ini adalah localhost dan phpmyadmin dengan menggunakan detail server seperti dibawah ini
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "pemweb";
+
