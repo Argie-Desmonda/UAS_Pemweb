@@ -42,7 +42,9 @@ Panduan:
 - Lampirkan langkah-langkah dalam membuat basisdata dengan syntax basisdata
 
   Langkah:
-  - Menggunakan query untuk membuat database dengan nama pemweb
+  - Menggunakan query untuk membuat database dengan nama pemweb pada phpmyadmin (CREATE DATABASE pemweb;)
+  - Membuat database dengan nama mahasiswa (CREATE TABLE `pemweb`.`mahasiswa` (`nama` VARCHAR(25) NOT NULL , `nim` INT(10) NOT NULL , `prodi` VARCHAR(20) NOT NULL , `jenisKelamin` VARCHAR(20) NOT NULL , `status` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+  - Menambahkan primary key pada kolom 'nim' (ALTER TABLE `pemweb`.`mahasiswa` ADD PRIMARY KEY (`nim`);
 
 3.2 (5%) Buatlah konfigurasi koneksi ke database MySQL pada file PHP. Pastikan koneksi berhasil dan dapat diakses.
 
