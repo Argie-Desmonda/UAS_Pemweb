@@ -1,6 +1,7 @@
 # UAS_Pemweb
 
 Bagian 1: Client-side Programming (Bobot: 30%)
+---------------------------------------------
 1.1 (15%) Buatlah sebuah halaman web sederhana yang memanfaatkan JavaScript untuk melakukan manipulasi DOM.
 
 Panduan:
@@ -16,19 +17,25 @@ Event Handler yang digunakan pada web ini adalah onclick pada tombol reset yang 
 
   
 Bagian 2: Server-side Programming (Bobot: 30%)
+-----------------------------------------------
 2.1 (20%) Implementasikan script PHP untuk mengelola data dari formulir pada Bagian 1 menggunakan variabel global seperti `$_POST` atau `$_GET`. Tampilkan hasil pengolahan data ke layar.
 
 Panduan:
 - Gunakan metode POST atau GET pada formulir.
+  website ini menggunakan metode POST untuk meningkatkan keamanan dari data yang disubmit oleh user agar data tidak ditampilkan di url.
 - Parsing data dari variabel global dan lakukan validasi disisi server
+  Dengan menggunakan POST pada form maka php dapat menerima data form tersebut dengan memeriksa jika website menggunakan metode POST maka akan mengambil data berdasarkan nama tiap input form dan memasukan data tersebut ke variabel lokal php sebelum dimasukan ke database menggunakan Query sql
 - Simpan ke basisdata termasuk jenis browser dan alamat IP pengguna
+  web ini dapat menyimpan jenis browser yang digunakan pengguna kedalam local storage
 2.2 (10%) Buatlah sebuah objek PHP berbasis OOP yang memiliki minimal dua metode dan gunakan objek tersebut dalam skenario tertentu pada halaman web Anda.
 
 Panduan:
 - Objek yang dibuat harus terkait dengan konteks pengembangan web saat ini.
 
 Bagian 3: Database Management (Bobot: 20%)
+---------------------------------------------
 3.1 (5%) Buatlah sebuah tabel pada database MySQL
+
 
 Panduan:
 - Lampirkan langkah-langkah dalam membuat basisdata dengan syntax basisdata
@@ -39,6 +46,7 @@ Panduan:
   - Menambahkan primary key pada kolom 'nim' (ALTER TABLE `pemweb`.`mahasiswa` ADD PRIMARY KEY (`nim`);
 
 3.2 (5%) Buatlah konfigurasi koneksi ke database MySQL pada file PHP. Pastikan koneksi berhasil dan dapat diakses.
+- 
 
 Panduan:
 - Gunakan konstanta atau variabel untuk menyimpan informasi koneksi (host, username, password, nama database).
