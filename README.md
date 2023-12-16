@@ -14,6 +14,8 @@ Panduan:
 Panduan:
 - Tambahkan minimal 3 event yang berbeda untuk menghandle form pada 1.1
 - Implementasikan JavaScript untuk validasi setiap input sebelum diproses oleh PHP
+
+  
 Bagian 2: Server-side Programming (Bobot: 30%)
 2.1 (20%) Implementasikan script PHP untuk mengelola data dari formulir pada Bagian 1 menggunakan variabel global seperti `$_POST` atau `$_GET`. Tampilkan hasil pengolahan data ke layar.
 
